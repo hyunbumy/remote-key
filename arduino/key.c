@@ -28,7 +28,7 @@ void init()
     DDRC &= ~(1<<PC4);
     DDRB |= (1<<PB2);
     DDRB |= (1<<PB1);
-    PORTC |= (1<<PC4);      // Pull-Up
+    //PORTC |= (1<<PC4);      // Pull-Up
 
     // Enable Interrupts
     PCICR |= (1<<PCIE1);        // Enable interrupt
@@ -54,8 +54,8 @@ void init()
 // Interrupt function
 ISR(PCINT1_vect)
 {
-    if (!(PINC & (1<<PC4)))
-        // Open
+    if ((PINC & (1<<PC4)) == 0)
+        // Open when receives a zero
         OCR1B = open[1];
     else
         // Close

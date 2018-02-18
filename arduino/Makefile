@@ -27,7 +27,7 @@ all:	main.hex
 
 flash:	all
 	$(AVRDUDE) -U flash:w:main.hex:i
-
+	make clean
 fuse:
 	$(AVRDUDE) $(FUSES)
 
