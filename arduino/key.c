@@ -1,11 +1,3 @@
-/********************************************
-*
-*  Name:
-*  Section:
-*  Assignment: Lab 4 - Up/Down counter on LCD display
-*
-********************************************/
-
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>

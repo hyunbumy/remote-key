@@ -8,7 +8,10 @@ GPIO.setup(3, GPIO.OUT)
 GPIO.output(3, GPIO.HIGH)
 while(1):
     command = input("Open or close: ")
-    if (command == 'open'):
+    if (command == 'quit'):
+        GPIO.cleanup()
+        break
+    elif (command == 'open'):
         # To open output a definitive 0
         GPIO.output(3, GPIO.LOW)
         print("Open")
