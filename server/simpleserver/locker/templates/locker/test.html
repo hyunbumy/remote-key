@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dummy Page</title>
+</head>
+<body>
+    <form action="{% url 'open' %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Open"/>
+    </form>
+</body>
+</html>
