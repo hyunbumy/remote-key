@@ -1,5 +1,6 @@
 *.o
 *.elf
 *.hex
+.vscode
 server/venv
 UNOV3PDF.png
