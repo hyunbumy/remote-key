@@ -2,5 +2,6 @@
 *.elf
 *.hex
 .vscode
+__pycache__/
 server/venv
 UNOV3PDF.png
