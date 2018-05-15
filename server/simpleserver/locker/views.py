@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpRequest
+
+#import RPI.GPIO as GPIO
+
 # Create your views here.
 def open_and_close(request):
     # request has the arguments from the client
@@ -12,5 +15,6 @@ def open_and_close(request):
 
     # If POST, then open / close
     elif (request.method == 'POST'):
+        #TODO: Find a way to store state info of the lock
         print("Open")
         return render(request,'locker/test.html')

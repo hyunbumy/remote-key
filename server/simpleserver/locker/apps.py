@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
+#import RPI.GPIO as GPIO
 
 class LockerConfig(AppConfig):
     name = 'locker'
@@ -8,3 +9,7 @@ class LockerConfig(AppConfig):
     def ready(self):
         # dummy
         print("I am here")
+        #GPIO.setmode(GPIO.BOARD)
+        #GPIO.setup(3, GPIO.OUT)
+
+        #GPIO.output(3, GPIO.HIGH)
