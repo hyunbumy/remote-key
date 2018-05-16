@@ -6,7 +6,7 @@ from locker.apps import isOpen
 #import RPI.GPIO as GPIO
 
 # Create your views here.
-class OpenClose(View):
+class OpenCloseView(View):
     # request has the arguments from the client
     # need to parse the request and make a context to pass into the html render
     # template uses the passed in context (dictionary) to populate its data
