@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpRequest
+from locker.apps import isOpen
 
 #import RPI.GPIO as GPIO
 
@@ -16,5 +17,11 @@ def open_and_close(request):
     # If POST, then open / close
     elif (request.method == 'POST'):
         #TODO: Find a way to store state info of the lock
-        print("Open")
+        global isOpen
+        if isOpen:
+            print("Closing")
+            isOpen = False
+        else:
+            print("Opening")
+            isOpen = True
         return render(request,'locker/test.html')

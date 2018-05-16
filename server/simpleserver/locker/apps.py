@@ -2,6 +2,8 @@ from django.apps import AppConfig
 
 #import RPI.GPIO as GPIO
 
+isOpen = None
+
 class LockerConfig(AppConfig):
     name = 'locker'
 
@@ -13,3 +15,6 @@ class LockerConfig(AppConfig):
         #GPIO.setup(3, GPIO.OUT)
 
         #GPIO.output(3, GPIO.HIGH)
+        global isOpen
+        isOpen = False
+        print(isOpen)
