@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'simpleserver.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'remote_key',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
-        'PORT': '',
+        'NAME': 'hyunbumy_remote_key',
+        'USER': 'hyunbumy_rkey_user',
+        'PASSWORD': '303RemotekeyUser!',
+        'HOST': '303.itpwebdev.com',
+        'PORT': '3306',
     }
 }
 
