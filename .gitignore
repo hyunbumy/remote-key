@@ -5,3 +5,4 @@
 __pycache__/
 server/venv
 UNOV3PDF.png
+*.pyc
