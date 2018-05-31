@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from locker.apps import isOpen
 
-#import RPI.GPIO as GPIO
+#import RPi.GPIO as GPIO
 
 # Create your views here.
 class OpenCloseView(APIView):
