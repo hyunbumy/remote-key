@@ -1,6 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from locker.apps import isOpen
+from .apps import isOpen
 
 import RPi.GPIO as GPIO
 

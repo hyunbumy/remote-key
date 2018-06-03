@@ -1,5 +1,5 @@
 from django.contrib import admin
-from locker.models import Lock
+from .models import Lock
 
 # Register your models here.
 @admin.register(Lock)
