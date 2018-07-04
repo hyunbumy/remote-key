@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Only [make]migrations on NEW models for the new project using the same DB (e.g. no initial migrations)
+# DO NOT MAKE MIGRATIONS HERE!!
 
 # Create your models here.
 class Lock(models.Model):
